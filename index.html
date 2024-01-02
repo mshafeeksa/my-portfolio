@@ -2,16 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/my-logo-no-bg.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Shafeek's Portfolio</title>
   </head>
-  <body>
-    <div id="main-page">
-      <div class="greeting"><div class="text">Hey there!</div><img src="./src/assets/waving-hand.svg" alt="A waving hand" class="emoticon"></div>
-      <div class="name"></div>
+  <body style="display: none;" onload="document.body.removeAttribute('style');">
+    <!-- <div 
+    style="width: 100%;
+    height: 100%;
+    "
+    class="loading-screen">
+      <object type="image/svg+xml" data="./src/assets/loading.svg" style="
+      width: 250px;
+      height: auto;
+      position:absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);"></object>
+    </div> -->
+    <div class="hello-screen full-screen hide">
+      <h1 class="hello-text middle">Hello</h1>
     </div>
-    <div id="root"></div>
+    <div class="main hide light-bg">
+      <section id="home-page" class="full-screen">
+        <div class="container">
+          <div class="left-main">
+            <div class="greeting">
+             <div class="text">Hey there!</div>
+              <img src="./src/assets/waving-hand.svg" alt="A waving hand" class="emoticon">
+            </div>
+            <div class="my-name">
+              <h1 class="name">I am <span>&lt;Mohammed Shafeek/&gt;</span></h1>
+              <h2 class="designation fade-in-from-above">I build cool websites</h2>
+            </div>
+            <div class="know-more">
+              <div class="bg-button-div"></div>
+              <a href="#about-page">
+                <div>Know more</div>
+              </a>
+            </div>
+          </div>
+          <div class="right-main">
+              <object type="image/svg+xml" data="./src/assets/avatar.svg"></object>
+          </div>
+        </div>
+      </section>
+      <section id="remaining-page">
+        <nav id="nav-bar">
+
+        </nav>
+        <section id="about-page" class="full-screen">
+
+        </section>
+      </section>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

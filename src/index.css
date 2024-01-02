@@ -1,6 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,400;0,600;0,800;0,900;1,300;1,400&family=Pacifico&display=swap');
+
+
+:root {
+  font-size: 18px;
+  --color-light: #cedcf5;
+  --color-end: #fff;
+  --color-medium: #4e5258;
+  --color-dark: #0b192e;
+  --color-neon: #05bfdb;
+}
+
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  background: var(--color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-neon);
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+}
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+/* 
+:root{
+  font-size: 18px;
+  --color-light: #c09580;
+  --color-medium: #565656;
+  --color-dark: #642120;
+} */
 
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+body{
+  font-family: "Overpass", Arial, Helvetica, sans-serif;
+  display: block !important;
+}
+
+.main{
+  overflow-x: hidden;
+}
+
+.light-bg{
+  background-color: var(--color-light);
+  color: var(--color-medium);
+}
+
+
+.full-screen{
+    width: 100vw;
+    width: 100svw;
+    height: 100vh;
+    height: 100svh;
+}
+
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.hide{
+  display: none;
+}
+
+.hello-screen{
+  position: relative;
+}
+
+.hello-text{
+  font-family:"Pacifico",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 4rem;
+  animation: fade-in-then-out 3s linear 0s 1 forwards;
+}
+
+.fade-out{
+  animation: fade-out 0.25s linear 0s 1 forwards;
+}
+
+.greeting{
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.greeting img{
+  height: 1.4rem;
+  width: auto ;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+#home-page .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.left-main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.right-main object {
+  height: max(30%,250px);
+  width: auto;
+}
+
+.my-name .name{
+  font-size:2.6rem;
+}
+
+.my-name .designation{
+  font-size: 1.8rem;
+}
+
+.my-name span{
+  color: var(--color-dark);
+}
+
+.greeting{
+  transform: translateY(-50px);
+  opacity: 0;
+  animation: fade-in-from-above 0.5s linear 2s 1 forwards;
+}
+
+.greeting img{
+  animation: waving 0.5s linear 0s infinite alternate;
+}
+
+.main{
+  opacity: 0;
+  animation: fade-in 1s linear 0.5s 1 forwards;
+}
+
+
+.left-main, .right-main{
+  padding: 24px;
+}
+
+
+.my-name h1{
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: fade-in-from-above 0.5s linear 2.5s 1 forwards;
+}
+
+
+.fade-in-from-above{
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: fade-in-from-above 0.5s linear 3s 1 forwards;
+}
+
+.know-more a{
+  text-decoration: none;
+  color: var(--color-end);
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.know-more{
+  position: relative;
+  width: 100%;
+  height: 90px;
+}
+ 
+.know-more a{
+  position: absolute; 
+}
+
+.know-more a div{
+  margin: 24px 0;
+  width: 150px;
+  height: 40px;
+  background-color: var(--color-dark);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fade-in 0.5s linear 3.5s 1 forwards;
+  transition: all 0.05s linear;
+}
+
+.know-more a div:hover{
+  transform: translate(3px,3px);
+}
+
+.know-more .bg-button-div{
+  opacity: 0;
+  animation: fade-in 0.5s linear 3.5s 1 forwards;
+  position: absolute;
+  margin: 24px 0;
+  width: 150px;
+  height: 40px;
+  background-color: var(--color-neon);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-in{
+  animation: specific-fade-in 0.5s linear 0s 1 forwards;
+}
+.fade-out{
+  animation: specific-fade-out 0.5s linear 0s 1 forwards;
+}
+
+@keyframes specific-fade-in {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+      }
+    
+      100% {
+        transform: translateY(0px);
+        opacity: 100;
+      }
+}
+
+@keyframes specific-fade-out {
+    0% {
+        transform: translateY(0px);
+        opacity: 100;
+      }
+    
+      100% {
+        transform: translateY(0px);
+        opacity: 0;
+      }
+  
+}
+
+
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100;
+  }
+}
+
+
+@keyframes fade-in-from-above {
+  0%{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100%{
+    opacity: 100;
+    transform: translateY(0px);
+  }
+}
+
+
+
+@keyframes waving {
+  0%{
+    transform: rotate(50deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+
+@keyframes fade-in-then-out {
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 100;
+  }
+
+  75%{
+    opacity: 100;
+  }
+
+  100%{
+    opacity: 0;
+  }
+  
+}
+
+@keyframes fade-out {
+  0%{
+    opacity: 100;
+  }
+  100%{
+    opacity: 0;
+  }
+}
