@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,400;0,600;0,800;0,900;1,300;1,400&family=Pacifico&display=swap');
 
-
-:root {
+:root{
+  transition-property: color;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+:root.light, :root{
   font-size: 18px;
   --color-light: #cedcf5;
   --color-end: #fff;
@@ -9,7 +13,14 @@
   --color-dark: #0b192e;
   --color-neon: #05bfdb;
 }
-
+:root.dark{
+  font-size: 18px;
+  --color-light: #0b192e;
+  --color-end: #000;
+  --color-medium: #4e5258;
+  --color-dark: #cedcf5;
+  --color-neon: #05bfdb;
+}
 
 ::-webkit-scrollbar {
   height: 12px;
@@ -32,13 +43,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* 
-:root{
-  font-size: 18px;
-  --color-light: #c09580;
-  --color-medium: #565656;
-  --color-dark: #642120;
-} */
+
 
 html{
   scroll-behavior: smooth;
@@ -49,11 +54,9 @@ html{
 body{
   font-family: "Overpass", Arial, Helvetica, sans-serif;
   display: block !important;
+
 }
 
-.main{
-  overflow-x: hidden;
-}
 
 .light-bg{
   background-color: var(--color-light);
@@ -62,8 +65,7 @@ body{
 
 
 .full-screen{
-    width: 100vw;
-    width: 100svw;
+    width: 100%;
     height: 100vh;
     height: 100svh;
 }
@@ -185,20 +187,18 @@ body{
 .know-more a{
   text-decoration: none;
   color: var(--color-end);
-  width: 100%;
   height: auto;
   text-align: center;
-}
+  position: absolute;
+  }
 
 .know-more{
   position: relative;
   width: 100%;
   height: 90px;
 }
- 
-.know-more a{
-  position: absolute; 
-}
+
+  
 
 .know-more a div{
   margin: 24px 0;
@@ -238,6 +238,73 @@ body{
 .fade-out{
   animation: specific-fade-out 0.5s linear 0s 1 forwards;
 }
+.quick-fade-in{
+  animation: specific-fade-in 0.01s linear 0s 1 forwards;
+}
+.quick-fade-out{
+  animation: specific-fade-out 0.01s linear 0s 1 forwards;
+}
+
+#nav-bar{
+  height: 80px;
+  background-color: var(--color-dark);
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0vh;
+}
+
+#nav-bar .container{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#nav-bar ul{
+
+  margin: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+#nav-bar ul li{
+  list-style: none;
+  width: 100px;
+  height: 100%;
+  margin: 0 18px;
+}
+
+#nav-bar ul a{
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+#nav-bar .active{
+  background-color: var(--color-neon);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes specific-fade-in {
     0% {
@@ -324,3 +391,4 @@ body{
     opacity: 0;
   }
 }
+
