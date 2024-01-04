@@ -27,7 +27,7 @@ const initializer = (function () {
     let current = "";
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
-      if (scrollY >= sectionTop - 200) {
+      if (scrollY >= sectionTop - 350) {
         current = section.getAttribute("id");
       }
     });
@@ -84,14 +84,14 @@ const initializer = (function () {
 //   });
 // }
   function changeColorScheme(isDark) {
-    let root = document.querySelector(":root");
+    let body = document.querySelector("body");
     if (isDark) {
-      root.classList.remove("light");
-      root.classList.add("dark");
+      body.classList.remove("light");
+      body.classList.add("dark");
     }
     else {
-      root.classList.remove("dark");
-      root.classList.add("light");      
+      body.classList.remove("dark");
+      body.classList.add("light");      
     }
   }
 

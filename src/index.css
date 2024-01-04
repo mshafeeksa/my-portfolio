@@ -1,25 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,400;0,600;0,800;0,900;1,300;1,400&family=Pacifico&display=swap');
 
 :root{
-  transition-property: color;
-  transition-duration: 2s;
-  transition-timing-function: ease;
-}
-:root.light, :root{
-  font-size: 18px;
-  --color-light: #cedcf5;
-  --color-end: #fff;
-  --color-medium: #4e5258;
-  --color-dark: #0b192e;
-  --color-neon: #05bfdb;
-}
-:root.dark{
-  font-size: 18px;
-  --color-light: #0b192e;
-  --color-end: #000;
-  --color-medium: #4e5258;
-  --color-dark: #cedcf5;
-  --color-neon: #05bfdb;
+font-size: 18px;
 }
 
 ::-webkit-scrollbar {
@@ -49,12 +31,36 @@ html{
   scroll-behavior: smooth;
 }
 
-
-
 body{
   font-family: "Overpass", Arial, Helvetica, sans-serif;
   display: block !important;
+}
 
+
+body, body *{
+  
+  transition-property: color background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+
+body.light,
+body {
+  --color-light: #cedcf5;
+  --color-end: #fff;
+  --color-medium: #4e5258;
+  --color-dark: #0b192e;
+  --color-neon: #05bfdb;
+}
+
+body.dark {
+  font-size: 18px;
+  --color-light: #0b192e;
+  --color-end: #000;
+  --color-medium: #4e5258;
+  --color-dark: #cedcf5;
+  --color-neon: #05bfdb;
 }
 
 
@@ -161,6 +167,8 @@ body{
 }
 
 .main{
+  background-color: var(--color-light);
+  color: var(--color-medium);
   opacity: 0;
   animation: fade-in 1s linear 0.5s 1 forwards;
 }
@@ -271,7 +279,7 @@ body{
 
 #nav-bar ul li{
   list-style: none;
-  width: 100px;
+  width: 140px;
   height: 100%;
   margin: 0 18px;
 }
@@ -290,8 +298,14 @@ body{
 
 }
 
+#nav-bar ul a:hover, #nav-bar ul a:focus{
+  background-color: var(--color-neon);
+  color: var(--color-dark);
+}
+
 #nav-bar .active{
   background-color: var(--color-neon);
+  color: var(--color-light);
 }
 
 
