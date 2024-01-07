@@ -119,7 +119,7 @@ body.dark {
 }
 
 .container {
-  width: 80%;
+  width: min(80%, 1910px);
   height: 100%;
   margin: auto;
 }
@@ -146,12 +146,8 @@ body.dark {
   align-items: start;
 }
 .right-main object {
-  height: max(40%,250px);
-  width: auto;
-}
-.right-main svg {
-  height: max(40%,250px);
-  width: auto;
+  width: 600px;
+  height: auto;
 }
 
 .my-name .name{
@@ -319,7 +315,14 @@ body.dark {
 
 
 
+.menu-hidden{
+  display: none;
+}
 
+.menu-hidden img{
+    width: 40px;
+    height: auto;
+}
 
 
 
@@ -411,3 +414,75 @@ body.dark {
   }
 }
 
+@media (max-width:1730px) {
+  .right-main object {
+      width: 400px;
+  }
+
+}
+
+@media (max-width: 1440px) {
+  .container{
+    width: 90%;
+  }
+  #nav-bar .container {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 1290px) {
+  .greeting {
+      font-size: 1rem;
+  }
+  .my-name .name {
+      font-size: 2rem;
+  }
+  .my-name .designation {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1110px) {
+  #home-page .container {
+    flex-direction: column;
+  }
+  .left-main {
+    align-items: center;
+  }
+
+  .know-more{
+    display: flex;
+    justify-content: center;
+  }
+
+  .designation{
+    text-align: center;
+  }
+}
+
+@media (max-width: 630px) {
+  .container{
+    width: 100%;
+  }
+  .my-name .name {
+    font-size: 1.6rem;
+  }
+  
+  .my-name .designation {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-to-hide{
+    display: none;
+  }
+  .menu-hidden{
+    display: flex;
+    justify-content: end;
+  }
+  #nav-bar .container{
+    justify-content: end;
+    width: 95%;
+  }
+}
