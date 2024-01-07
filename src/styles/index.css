@@ -428,6 +428,9 @@ body.dark {
   #nav-bar .container {
       justify-content: center;
   }
+  .title-container{
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 1290px) {
@@ -460,18 +463,6 @@ body.dark {
   }
 }
 
-@media (max-width: 630px) {
-  .container{
-    width: 100%;
-  }
-  .my-name .name {
-    font-size: 1.6rem;
-  }
-  
-  .my-name .designation {
-    font-size: 1.2rem;
-  }
-}
 
 @media (max-width: 900px) {
   .menu-to-hide{
@@ -481,8 +472,41 @@ body.dark {
     display: flex;
     justify-content: end;
   }
+  
+  #nav-bar{
+    padding-right: 0;
+  }
+
+  #nav-bar ul{
+    margin-right: 0;
+  }
+
   #nav-bar .container{
     justify-content: end;
-    width: 95%;
+    width: 100%;
+    margin: 0;
+  }
+  .title-container {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 630px) {
+  body, html{
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .my-name .name {
+    font-size: 0.8rem;
+  }
+
+  .my-name .designation {
+    font-size: 0.6rem;
+  }
+  .right-main object {
+    width: 240px;
   }
 }
