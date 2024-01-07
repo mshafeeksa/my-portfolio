@@ -121,7 +121,7 @@ export const portfolioData = [
         title: "Battleship",
         type: "Mini Game",
         tech: "HTML,CSS and Javascript (tested with Jest)",
-        description: "Introducing Weather Pad, your go-to weather companion for quick and accurate updates. This user-friendly app allows you to effortlessly search for any location and instantly receive comprehensive weather information. Stay ahead of the forecast with Weather Pad's intuitive interface, providing current conditions, temperature, humidity, wind speed, and more. Whether you're planning your day or preparing for a trip, Weather Pad ensures you're always in the know, making it the perfect tool for your daily weather needs.",
+        description: "Experience the classic naval warfare excitement with our Battleship game app. Deploy your fleet strategically, take aim, and sink your opponent's ships to claim victory in this timeless battle of strategy and cunning.",
         preview: "https://mshafeeksa.github.io/battleship/",
         source: "https://github.com/mshafeeksa/battleship"        
         

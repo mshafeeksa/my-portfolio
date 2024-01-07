@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import About from './About'
 import Contact from './Contact'
 import Portfolio from './Portfolio'
+import InsertAvatar from './Avatar'
 import './styles/index.css'
 import {startHelloScreen,hideHelloScreen} from './helpers'
 
@@ -21,6 +22,12 @@ ReactDOM.createRoot(document.getElementById('contact-page')).render(
 ReactDOM.createRoot(document.getElementById('portfolio-page')).render(
   <React.StrictMode>
     <Portfolio />
+  </React.StrictMode>,
+)
+
+ReactDOM.createRoot(document.getElementById('avatar-div')).render(
+  <React.StrictMode>
+    <InsertAvatar />
   </React.StrictMode>,
 )
 

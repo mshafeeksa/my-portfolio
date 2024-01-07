@@ -149,6 +149,10 @@ body.dark {
   height: max(40%,250px);
   width: auto;
 }
+.right-main svg {
+  height: max(40%,250px);
+  width: auto;
+}
 
 .my-name .name{
   font-size:2.6rem;
