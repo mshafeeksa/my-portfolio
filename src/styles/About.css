@@ -1,0 +1,77 @@
+body.dark {
+    font-size: 18px;
+    --color-light: #0b192e;
+    --color-end: #000;
+    --color-medium: #4e5258;
+    --color-dark: #cedcf5;
+    --color-neon: #05bfdb;
+}
+
+.about-me-container{
+    color: var(--color-dark);
+    display: flex;
+    height: 100%;
+}
+
+.about-me-container .about-side, .about-me-container .skillset-side{
+    flex: 1;
+    margin-right: max(4%,50px);
+}
+
+.about-me-container .about-side{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+#about-page{
+    display: flex;
+    flex-direction: column;
+}
+
+#about-page .skill-icon{
+    width: 60px;
+    height: auto;
+}
+
+.skillset-box{
+    margin-left: max(4%, 50px);
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skillset-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillset-header{
+    font-size: 2rem;
+    text-align: center;
+    margin: 12px auto;
+}
+
+.skillset-content{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(4, 1fr)/repeat(3,1fr);
+}
+
+.skill-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill-text{
+    margin-top: 6px;
+}

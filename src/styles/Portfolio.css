@@ -1,0 +1,122 @@
+:root{
+    --project-box-height: 300px;
+}
+#portfolio-page{
+    min-height: 100vh;
+    min-height: 100svh;
+
+}
+
+#portfolio-page .portfolio-container{
+    padding: 24px;
+    margin: 60px auto;
+}
+
+.project-box{
+    display: grid;
+    grid-template: 1fr/1fr 1fr;
+    height: var(--project-box-height);
+    margin-top: 100px;
+}
+
+.project-left{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-left .project-image,
+.project-left .dummy-div{
+    position: absolute;
+    width: 500px;
+    height: 281px;
+}
+
+.project-left .dummy-div{
+    background-color: var(--color-neon);
+    transform: translate(-10px,-10px);
+}
+
+.project-left .project-image{
+    border: 1px solid var(--color-neon);
+    box-shadow: -9px -8px 10px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -9px -8px 10px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -9px -8px 10px -1px rgba(0, 0, 0, 0.75);
+}
+
+.project-right{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.project-right .project-title{
+    color: var(--color-dark);
+    font-size: 1.8rem;
+}
+
+.project-right .project-type{
+    color: var(--color-medium);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.project-right .project-description{
+    margin-top: 8px;
+    text-align: justify;
+}
+
+.project-button-area{
+    display: flex;
+    gap: 42px;
+    margin-top: 24px;
+}
+
+.project-right a{
+    text-decoration: none;
+    color: var(--color-light);
+    width: 200px;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.project-right .project-preview-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.project-preview-button .button-logo{
+    background-image: url("../assets/icons/external-black.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+}
+
+.project-preview{
+    background-color: var(--header-color);
+}
+
+.project-source{
+    background-color: var(--color-dark);
+}
+
+.project-right a:hover{
+    background-color: var(--color-neon);
+    transform: perspective(500px) translateZ(30px);
+}
+
+.project-box:nth-child(even) .project-left{
+    grid-area: 1/2/1/2;
+}

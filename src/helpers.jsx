@@ -1,3 +1,5 @@
+import { profileArray } from "./data";
+
 export function hideLoading() {
     const loadingScreen = document.querySelector(".loading-screen");
     loadingScreen.classList.add("fade-out");
@@ -29,11 +31,7 @@ function animateDesignation(index = 1, key = null) {
     const designation = document.querySelector("#home-page .designation");
     designation.classList.remove("fade-in");
     designation.classList.add("fade-out");
-    const textArray = [
-        "I build cool websites",
-        "I am a Full Stack Developer",
-        "I am a Front End Developer"
-    ];
+    const textArray = profileArray;
     if (key !== null) {
         clearTimeout(key);
     }
@@ -50,3 +48,5 @@ function animateDesignation(index = 1, key = null) {
         key = setTimeout(() => animateDesignation(index, key),2000);
     },{once:true})
 }
+
+

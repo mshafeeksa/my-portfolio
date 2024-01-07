@@ -1,12 +1,26 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import About from './about'
-import './index.css'
+import About from './About'
+import Contact from './Contact'
+import Portfolio from './Portfolio'
+import './styles/index.css'
 import {startHelloScreen,hideHelloScreen} from './helpers'
 
 ReactDOM.createRoot(document.getElementById('about-page')).render(
   <React.StrictMode>
     <About />
+  </React.StrictMode>,
+)
+
+ReactDOM.createRoot(document.getElementById('contact-page')).render(
+  <React.StrictMode>
+    <Contact />
+  </React.StrictMode>,
+)
+
+ReactDOM.createRoot(document.getElementById('portfolio-page')).render(
+  <React.StrictMode>
+    <Portfolio />
   </React.StrictMode>,
 )
 
@@ -53,36 +67,6 @@ const initializer = (function () {
   }
 })();
 
-// function changeColorScheme(isDark) {
-//   let root = document.querySelector(":root");
-//   let colorLight, colorEnd, colorMedium, colorDark, colorNeon;
-//   if (isDark) {
-//     colorLight = "#0b192e";
-//     colorEnd = "#000000";
-//     colorMedium = "#4e5258";
-//     colorDark = "#cedcf5";
-//     colorNeon = "#05bfdb";
-//   }
-//   else {
-//     colorLight = "#cedcf5";
-//     colorEnd = "#ffffff";
-//     colorMedium = "#4e5258";
-//     colorDark = "#0b192e";
-//     colorNeon = "#05bfdb";
-//   }
-
-//   root.classList.add("quick-fade-out");
-//   root.addEventListener("animationend", () => {
-//     root.style.setProperty('--color-light', colorLight);
-//     root.style.setProperty('--color-end', colorEnd);
-//     root.style.setProperty('--color-medium', colorMedium);
-//     root.style.setProperty('--color-dark', colorDark);
-//     root.style.setProperty('--color-neon', colorNeon);
-//     root.classList.remove("quick-fade-out");
-//     root.classList.add("quick-fade-in");
-//     root.addEventListener("animationend", () => root.classList.remove("quick-fade-in"));
-//   });
-// }
   function changeColorScheme(isDark) {
     let body = document.querySelector("body");
     if (isDark) {
