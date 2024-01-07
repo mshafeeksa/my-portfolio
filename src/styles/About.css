@@ -39,7 +39,7 @@ body.dark {
 
 .skillset-box{
     margin-left: max(4%, 50px);
-    width: 600px;
+    width: min(80%,600px);
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -74,4 +74,46 @@ body.dark {
 
 .skill-text{
     margin-top: 6px;
+}
+
+@media (max-width: 1050px) {
+    .about-me-container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 630px) {
+    .about-me-container .about-side {
+        font-size: 0.6rem;
+        margin: auto;
+        padding: 12px;
+    }
+
+    #about-page .skill-text{
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .about-me-container, .about-side{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-side{
+        width: 100%;
+    }
+
+    #about-page .skill-icon {
+        width: 30px;
+        height: auto;
+    }
+        
+    .skillset-box {
+        height: 300px;
+    }
+
+    .skillset-header {
+        font-size: 1rem;
+    }
+        
 }
