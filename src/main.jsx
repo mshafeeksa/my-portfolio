@@ -5,6 +5,8 @@ import Contact from './Contact'
 import Portfolio from './Portfolio'
 import InsertAvatar from './Avatar'
 import './styles/index.css'
+import './styles/animations.css'
+import { addIntersectionObservers } from './animation'
 import {startHelloScreen,hideHelloScreen} from './helpers'
 
 ReactDOM.createRoot(document.getElementById('about-page')).render(
@@ -31,10 +33,13 @@ ReactDOM.createRoot(document.getElementById('avatar-div')).render(
   </React.StrictMode>,
 )
 
+
+
 window.onload = () => {
   const helloScreen = document.querySelector(".hello-screen")
   setTimeout(startHelloScreen, 1000);
   helloScreen.addEventListener("animationend", hideHelloScreen);
+  addIntersectionObservers();
 }
 
 // eslint-disable-next-line no-unused-vars

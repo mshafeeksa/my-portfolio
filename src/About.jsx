@@ -15,11 +15,11 @@ export default function About() {
 function AddAboutMe({ about, extra, skills }) {
     return (<>
         <div className="container about-me-container">
-            <div className="about-side">
+            <div className="about-side left-hidden">
                 <div className="about">{about}</div>
                 <div className="extra">{extra}</div>
             </div>
-            <div className="skillset-side">
+            <div className="skillset-side right-hidden">
                 <div className="skillset-box">
                     <div className="skillset-header">My Skill Set</div>
                     <div className="skillset-content">
@@ -33,9 +33,8 @@ function AddAboutMe({ about, extra, skills }) {
 
 
 function SkillIcon({ skillItem = null}) {
-    console.log(skillItem);
     return (
-        <div className="skill-box">
+        <div className="skill-box back-hidden">
             <img src={skillItem.image} alt={skillItem.text} className="skill-icon" />
             <div className="skill-text">{skillItem.text }</div>
         </div>

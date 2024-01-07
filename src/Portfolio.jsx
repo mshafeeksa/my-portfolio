@@ -14,14 +14,14 @@ export default function Portfolio() {
 function AddPortfolio() {
     return (
         <div className="portfolio-container container">
-            {portfolioData.map((project) => {
+            {portfolioData.map((project,index) => {
                 return (
                     <div key={project.id} className="project-box">
-                        <div className="project-left">
+                        <div className={`project-left ${(index%2===0) ? 'left-hidden' : 'right-hidden'}`}>
                             <div className="dummy-div"></div>
                             <img src={project.image} alt={project.title} className="project-image" />
                         </div>
-                        <div className="project-right">
+                        <div className={`project-right ${(index%2===0) ? 'right-hidden' : 'left-hidden'}`}>
                             <h1 className="project-title">{project.title}</h1>
                             <h2 className="project-type">{`${project.type}  (using ${project.tech})`}</h2>
                             <div className="project-description">{ project.description}</div>

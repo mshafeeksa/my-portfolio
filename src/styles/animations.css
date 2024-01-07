@@ -1,0 +1,28 @@
+.left-hidden{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.25s ease;
+}
+
+.right-hidden{
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.25s ease;
+
+}
+
+.back-hidden{
+    opacity: 0;
+    transform: perspective(500px) translateZ(-100px);
+    transition: transform 0.25s ease;
+}
+
+.left-hidden.show, .right-hidden.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.back-hidden.show{
+    opacity: 1;
+    transform: perspective(500px) translateZ(0);
+}
