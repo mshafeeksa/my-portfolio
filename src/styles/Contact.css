@@ -67,3 +67,16 @@
 .github-box:hover .github-icon{
     background-image: url("../assets/icons/github.svg");
 }
+
+@media (max-width: 630px) {
+    footer{
+        font-size: 0.6rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo{
+        width: 25px;
+        height: auto;
+    }
+}

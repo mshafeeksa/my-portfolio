@@ -497,6 +497,9 @@ body.dark {
 }
 
 @media (max-width: 630px) {
+  body{
+    background-image: none;
+  }
   body, html{
     width: 100%;
   }
