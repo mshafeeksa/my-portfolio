@@ -510,7 +510,7 @@ body.dark {
 
   #nav-bar {
     height: 60px;
-    /* position: fixed; */
+    position: fixed;
     top: 0px;
   }
 
