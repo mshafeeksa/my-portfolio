@@ -480,6 +480,8 @@ body.dark {
   
   #nav-bar{
     padding-right: 0;
+    position: fixed;
+    top: 0;
   }
 
   #nav-bar ul{
@@ -502,6 +504,7 @@ body.dark {
   }
   body, html{
     width: 100%;
+    overflow-x: hidden;
   }
   .container {
     width: 100%;
