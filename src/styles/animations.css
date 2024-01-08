@@ -26,3 +26,9 @@
     opacity: 1;
     transform: perspective(500px) translateZ(0);
 }
+
+@media (max-width: 630px) {
+    .right-hidden{
+        transform: translateX(-100px);
+    }
+}

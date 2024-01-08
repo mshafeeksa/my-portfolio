@@ -502,7 +502,7 @@ body.dark {
   }
   body, html{
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
   .container {
     width: 100%;
@@ -510,7 +510,7 @@ body.dark {
 
   #nav-bar {
     height: 60px;
-    position: fixed;
+    /* position: fixed; */
     top: 0px;
   }
 
@@ -524,4 +524,8 @@ body.dark {
   .right-main object {
     width: 240px;
   }
+.left-main,
+.right-main {
+  padding: 8px;
+}
 }
