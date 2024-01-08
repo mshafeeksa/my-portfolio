@@ -480,8 +480,6 @@ body.dark {
   
   #nav-bar{
     padding-right: 0;
-    position: fixed;
-    top: 0;
   }
 
   #nav-bar ul{
@@ -512,6 +510,7 @@ body.dark {
 
   #nav-bar {
     height: 60px;
+    /* position: fixed; */
     top: 0px;
   }
 
