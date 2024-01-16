@@ -13,6 +13,7 @@ import Tasklet from "./assets/webpage-preview/tasklet.gif"
 import CvBuddy from "./assets/webpage-preview/cv-buddy.gif"
 import WeatherPad from "./assets/webpage-preview/weather-pad.gif"
 import BattleShip from "./assets/webpage-preview/battleship.gif"
+import MemoryGame from "./assets/webpage-preview/memory-game.gif"
 
 
 export const profileArray = ["I build cool websites",
@@ -105,6 +106,17 @@ export const portfolioData = [
         source: "https://github.com/mshafeeksa/cv-generator"
     },
     {
+        id: "memorygame",
+        image: MemoryGame,
+        title: "Memory Ninja",
+        type: "Mini Game",
+        tech: "React.js, HTML and CSS",
+        description: "Embark on a challenging and engaging memory adventure with this unique memory game! Test and enhance your cognitive skills as you navigate through a grid of images. The twist? You can't click on the same image twice from a dynamic list. This project makes use of useState and useEffect hooks of React.",
+        preview: "https://memory-ninja.netlify.app/",
+        source: "https://github.com/mshafeeksa/memory-game"        
+        
+    },
+    {
         id: "weatherpad",
         image: WeatherPad,
         title: "Weather Pad",
@@ -126,4 +138,5 @@ export const portfolioData = [
         source: "https://github.com/mshafeeksa/battleship"        
         
     }
+    
 ]
