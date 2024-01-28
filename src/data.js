@@ -14,6 +14,7 @@ import CvBuddy from "./assets/webpage-preview/cv-buddy.gif"
 import WeatherPad from "./assets/webpage-preview/weather-pad.gif"
 import BattleShip from "./assets/webpage-preview/battleship.gif"
 import MemoryGame from "./assets/webpage-preview/memory-game.gif"
+import Threaded from "./assets/webpage-preview/threaded.gif"
 
 
 export const profileArray = ["I build cool websites",
@@ -86,6 +87,17 @@ export const mySkillSet = [
 
 export const portfolioData = [
     {
+        id: "threaded",
+        image: Threaded,
+        title: "Threaded",
+        type: "Conceptual e-commerce website",
+        tech: "React, React Router, Tailwind CSS and Fakestore API",
+        description: "Threaded is a conceptual ecommerce website created with Fakestore API and using React and React Router. The website has a homepage with an image slider and uses React Router for all pages. For styling, tailwind CSS is used along with vanilla CSS.",
+        preview: "https://threaded-store.vercel.app/",
+        source: "https://github.com/mshafeeksa/shopping-cart"        
+        
+    },
+    {
         id: "tasklet",
         image: Tasklet,
         title: "Tasklet",
@@ -108,7 +120,7 @@ export const portfolioData = [
     {
         id: "memorygame",
         image: MemoryGame,
-        title: "Memory Ninja",
+        title: "The Memory Ninja",
         type: "Mini Game",
         tech: "React.js, HTML and CSS",
         description: "Embark on a challenging and engaging memory adventure with this unique memory game! Test and enhance your cognitive skills as you navigate through a grid of images. The twist? You can't click on the same image twice from a dynamic list. This project makes use of useState and useEffect hooks of React.",
@@ -137,6 +149,7 @@ export const portfolioData = [
         preview: "https://mshafeeksa.github.io/battleship/",
         source: "https://github.com/mshafeeksa/battleship"        
         
-    }
+    },
+    
     
 ]
