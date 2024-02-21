@@ -4,7 +4,7 @@ import Js from "./assets/icons/javascript.svg";
 import React from "./assets/icons/react.svg";
 import Tailwind from "./assets/icons/tailwind-css.svg";
 import Jest from "./assets/icons/jest.svg";
-import Npm from "./assets/icons/npm.svg";
+import ReactBootstrap from "./assets/icons/reactbootstrap.svg";
 import Webpack from "./assets/icons/webpack.svg";
 import Git from "./assets/icons/git.svg";
 import Mongodb from "./assets/icons/mongodb.svg";
@@ -94,9 +94,9 @@ export const mySkillSet = [
         text: "Jest"
     },
     {
-        id: "npm",
-        image: Npm,
-        text: "NPM"
+        id: "reactbootstrap",
+        image: ReactBootstrap,
+        text: "React Bootstrap"
     },
     {
         id: "webpack",
