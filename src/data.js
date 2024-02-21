@@ -7,20 +7,25 @@ import Jest from "./assets/icons/jest.svg";
 import Npm from "./assets/icons/npm.svg";
 import Webpack from "./assets/icons/webpack.svg";
 import Git from "./assets/icons/git.svg";
-import C from "./assets/icons/c.svg";
-import Ps from "./assets/icons/photoshop.svg"
-import Tasklet from "./assets/webpage-preview/tasklet.gif"
-import CvBuddy from "./assets/webpage-preview/cv-buddy.gif"
-import WeatherPad from "./assets/webpage-preview/weather-pad.gif"
-import BattleShip from "./assets/webpage-preview/battleship.gif"
-import MemoryGame from "./assets/webpage-preview/memory-game.gif"
+import Mongodb from "./assets/icons/mongodb.svg";
+import Next from "./assets/icons/next.svg";
+import Typescript from "./assets/icons/typescript.svg";
+import Node from "./assets/icons/node.svg";
+import Redux from "./assets/icons/redux.svg";
+import Express from "./assets/icons/express.svg"
+import Tasklet from "./assets/webpage-preview/tasklet.png"
+import CvBuddy from "./assets/webpage-preview/cv-buddy.png"
+import WeatherPad from "./assets/webpage-preview/weather-pad.png"
+import MemoryGame from "./assets/webpage-preview/memory-game.png"
 import Threaded from "./assets/webpage-preview/threaded.gif"
+import Goalsetter from "./assets/webpage-preview/goalsetter.png"
 
 
 export const profileArray = ["I build cool websites",
     "I am a Full Stack Developer",
+    "I am a MERN stack developer",
     "I am a Front End Developer",
-    "I build easy-to-use web applications"
+    "I build easy-to-use web applications",
 ];
 
 export const aboutMe = "Hey there! I'm Mohammed Shafeek, a former automotive software engineer who followed his lifelong passion for coding into the world of web development. With a background steeped in two years of automotive tech, I embarked on a self-taught journey to master web development. I believe in the infinite power of learning and regularly update my skills to stay abreast of the latest technologies. As an artist who loves drawing cartoons, I bring a creative edge to problem-solving. I'm eager to blend my technical expertise and creativity to contribute meaningfully to innovative projects."
@@ -44,9 +49,39 @@ export const mySkillSet = [
         text: "Javascript"
     },
     {
+        id: "express",
+        image: Express,
+        text: "Express.js"
+    },
+    {
         id: "react",
         image: React,
         text: "React"
+    },
+    {
+        id: "mongo",
+        image: Mongodb,
+        text: "MongoDB"
+    },
+    {
+        id: "node",
+        image: Node,
+        text: "Node.js"
+    },
+    {
+        id: "next",
+        image: Next,
+        text: "Next.js"
+    },
+    {
+        id: "typescript",
+        image: Typescript,
+        text: "Typescript"
+    },
+    {
+        id: "redux",
+        image: Redux,
+        text: "Redux Toolkit"
     },
     {
         id: "tailwind",
@@ -73,16 +108,6 @@ export const mySkillSet = [
         image: Git,
         text: "Git"
     },
-    {
-        id: "c",
-        image: C,
-        text: "C"
-    },
-    {
-        id: "ps",
-        image: Ps,
-        text: "Photoshop"
-    }
 ];
 
 export const portfolioData = [
@@ -95,6 +120,17 @@ export const portfolioData = [
         description: "Threaded is a conceptual ecommerce website created with Fakestore API and using React and React Router. The website has a homepage with an image slider and uses React Router for all pages. For styling, tailwind CSS is used along with vanilla CSS.",
         preview: "https://threaded-store.vercel.app/",
         source: "https://github.com/mshafeeksa/shopping-cart"        
+        
+    },
+    {
+        id: "goalsetter",
+        image: Goalsetter,
+        title: "Goal Setter",
+        type: "MERN Fullstack project",
+        tech: "MongoDB, Express, React, Node.js and JWT Authentication",
+        description: "Goal Setter is a MERN fullstack project. It is a basic website that uses RestAPIs for user creation and CRUD operations for goals",
+        preview: "https://goalsettershafeek-a90b4ecf7189.herokuapp.com/",
+        source: "https://github.com/mshafeeksa/goal-setter-app"        
         
     },
     {
@@ -114,7 +150,7 @@ export const portfolioData = [
         type: "App",
         tech: "React.js, HTML and CSS",
         description: "CV Buddy, as the name suggests, is your buddy in making good-looking well-organized CV for all your job applications. The real-time data population of the app helps you make quick decisions on the data you enter to make your CV look great. The app is a perfect example to showcase React.js' versatility.",
-        preview: "https://spiffy-marshmallow-151bd7.netlify.app/",
+        preview: "https://cvbuddy.netlify.app",
         source: "https://github.com/mshafeeksa/cv-generator"
     },
     {
@@ -138,18 +174,6 @@ export const portfolioData = [
         preview: "https://mshafeeksa.github.io/weather-pad/",
         source: "https://github.com/mshafeeksa/weather-pad"        
         
-    },
-    {
-        id: "battleship",
-        image: BattleShip,
-        title: "Battleship",
-        type: "Mini Game",
-        tech: "HTML,CSS and Javascript (tested with Jest)",
-        description: "Experience the classic naval warfare excitement with our Battleship game app. Deploy your fleet strategically, take aim, and sink your opponent's ships to claim victory in this timeless battle of strategy and cunning.",
-        preview: "https://mshafeeksa.github.io/battleship/",
-        source: "https://github.com/mshafeeksa/battleship"        
-        
-    },
-    
+    },  
     
 ]
